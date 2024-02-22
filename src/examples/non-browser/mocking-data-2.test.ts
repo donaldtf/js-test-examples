@@ -1,6 +1,8 @@
 import { faker } from "@faker-js/faker";
 import { addItemToCart, Customer, Item } from "./mocking-data";
 
+// Works, but error prone if you have multiple tests relying on shared data
+
 const item: Item = {
   id: faker.string.uuid(),
   name: faker.commerce.product(),

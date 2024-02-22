@@ -1,6 +1,8 @@
 import { faker } from "@faker-js/faker";
 import { addItemToCart, Cart, Customer, Item } from "./mocking-data";
 
+// Flexible but with sensible defaults
+
 const makeItem = (overrides?: Partial<Item>): Item => {
   return {
     id: faker.string.uuid(),

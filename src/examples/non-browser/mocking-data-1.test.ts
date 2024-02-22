@@ -1,6 +1,8 @@
 import { faker } from "@faker-js/faker";
 import { addItemToCart, Customer, Item } from "./mocking-data";
 
+// Works, but verbose and repetitive
+
 describe("mocking data example 1", () => {
   it("should add an item to cart", () => {
     const item: Item = {

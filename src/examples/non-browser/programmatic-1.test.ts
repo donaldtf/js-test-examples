@@ -2,6 +2,8 @@ import { faker } from "@faker-js/faker";
 import { Order, ShipmentStatus, getShipmentStatus } from "./programmatic";
 import { subDays } from "date-fns";
 
+// Works, but verbose and repetitive
+
 const makeOrder = (overrides?: Partial<Order>): Order => {
   return {
     orderNumber: faker.string.uuid(),

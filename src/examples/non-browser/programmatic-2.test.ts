@@ -16,6 +16,9 @@ const makeOrder = (overrides?: Partial<Order>): Order => {
   };
 };
 
+// lets you focus on inputs and outputs, not test setup/structure
+// not good for all kinds of tests but can be useful for some that have predictable inputs and outputs
+
 const tests: { order: Partial<Order>; expected: ShipmentStatus }[] = [
   {
     order: { shipmentDate: faker.date.recent() },
